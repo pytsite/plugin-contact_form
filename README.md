@@ -5,6 +5,10 @@ Contact form for PytSite.
 
 ## Changelog
 
+### 0.2.1 (2016-12-05)
+- Fixed JS submit handler.
+
+
 ### 0.2 (2016-12-05)
 - Added API function: `get()`.
 - Added new event: `contact_form.setup_widgets`.
