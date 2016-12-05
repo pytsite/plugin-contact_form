@@ -1,6 +1,6 @@
 """PytSite Contact Form.
 """
-from pytsite import form as _form, widget as _widget, lang as _lang, assetman as _assetman
+from pytsite import form as _form, widget as _widget, lang as _lang, assetman as _assetman, events as _events
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
@@ -61,3 +61,5 @@ class Form(_form.Form):
         submit_btn = self.get_widget('action-submit')
         submit_btn.icon = None
         submit_btn.value = _lang.t('contact_form@send_message')
+
+        _events.fire('contact_form.setup_widgets', frm=self)

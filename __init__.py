@@ -1,7 +1,7 @@
 """PytSite Contact Form Plugin.
 """
 # Public API
-from ._form import Form
+from ._api import get
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'

@@ -1,1 +1,18 @@
-{}
+{
+  "name": "Contact Form",
+  "description": {
+    "en": "Contact form",
+    "ru": "Форма обратной связи",
+    "uk": "Форма зворотнього зв'язку"
+  },
+  "url": "https://github.com/pytsite/plugin-contact_form",
+  "author": {
+    "name": "Alexander Shepetko",
+    "email": "a@shepetko.com",
+    "url": "https://shepetko.com"
+  },
+  "requires": {
+    "packages": [],
+    "plugins": []
+  }
+}
