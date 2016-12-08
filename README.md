@@ -5,6 +5,10 @@ Contact form for PytSite.
 
 ## Changelog
 
+### 0.2.2 (2016-12-09)
+- Fixed sender name translation. 
+
+
 ### 0.2.1 (2016-12-05)
 - Fixed JS submit handler.
 
