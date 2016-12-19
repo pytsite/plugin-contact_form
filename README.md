@@ -1,16 +1,18 @@
 # PytSite Contact Form Plugin
 
-Contact form for PytSite.
-
 
 ## Changelog
 
+### 0.2.3 (2016-12-19)
+plugin.json updated.
+
+
 ### 0.2.2 (2016-12-09)
-- Fixed sender name translation. 
+Fixed sender name translation. 
 
 
 ### 0.2.1 (2016-12-05)
-- Fixed JS submit handler.
+Fixed JS submit handler.
 
 
 ### 0.2 (2016-12-05)
@@ -20,4 +22,4 @@ Contact form for PytSite.
 
 
 ### 0.1 (2016-11-28)
-- First release.
+First release.
