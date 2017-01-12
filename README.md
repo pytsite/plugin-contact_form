@@ -3,6 +3,11 @@
 
 ## Changelog
 
+
+### 0.2.4 (2017-01-12)
+Support for latest PytSite `form`'s changes.
+
+
 ### 0.2.3 (2016-12-19)
 plugin.json updated.
 
@@ -12,7 +17,7 @@ Fixed sender name translation.
 
 
 ### 0.2.1 (2016-12-05)
-Fixed JS submit handler.
+JS submit handler fixed.
 
 
 ### 0.2 (2016-12-05)

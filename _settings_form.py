@@ -8,7 +8,7 @@ __license__ = 'MIT'
 
 
 class Form(_settings.Form):
-    def _setup_widgets(self):
+    def _on_setup_widgets(self):
         self.add_widget(_widget.input.StringList(
             uid='setting_recipients',
             weight=10,
@@ -18,4 +18,4 @@ class Form(_settings.Form):
             add_btn_label=_lang.t('contact_form@add_recipient'),
         ))
 
-        super()._setup_widgets()
+        super()._on_setup_widgets()
