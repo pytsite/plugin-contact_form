@@ -10,14 +10,15 @@ __license__ = 'MIT'
 class Form(_form.Form):
     """Contact Form.
     """
-    def __init__(self, uid='pytsite-contact-form', **kwargs):
+    def __init__(self, **kwargs):
         """Init.
         """
-        super().__init__(uid, **kwargs)
+        super().__init__(**kwargs)
 
         self._css += ' pytsite-contact-form'
         self._prevent_submit = True
         self._area_footer_css += ' text-center'
+
         _assetman.add('contact_form@js/contact-form.js', async=True, defer=True)
 
     def _on_setup_widgets(self):

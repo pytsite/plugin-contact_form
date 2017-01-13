@@ -7,5 +7,5 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 
-def get(uid: str = 'pytsite-contact-form', **kwargs) -> _contact_form.Form:
-    return _contact_form.Form(uid, **kwargs)
+def get(**kwargs) -> _contact_form.Form:
+    return _contact_form.Form(**kwargs)

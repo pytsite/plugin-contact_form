@@ -21,7 +21,7 @@ def post_submit(**kwargs) -> dict:
     for rcp in recipients:
         _mail.Message(
             rcp,
-            _lang.t('contact_form@message_from_site', {'name': _lang.t('app@app_name')}),
+            _lang.t('contact_form@message_from_site', {'name': _lang.t('app_name')}),
             _tpl.render(_reg.get('contact_form.tpl', 'contact_form@mail'), kwargs),
             reply_to=kwargs.get('contact_email'),
         ).send()
