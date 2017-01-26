@@ -4,6 +4,10 @@
 ## Changelog
 
 
+### 0.2.8 (2017-01-26)
+HTTP API update.
+
+
 ### 0.2.7 (2017-01-15)
 Support for latest PytSite `form`'s changes.
 

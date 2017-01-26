@@ -10,7 +10,7 @@ __license__ = 'MIT'
 
 def _init():
     from pytsite import assetman, lang, tpl, http_api, permissions, settings
-    from . import _settings_form
+    from . import _settings_form, _http_api
 
     # Resources
     assetman.register_package(__name__, alias='contact_form')
@@ -18,7 +18,7 @@ def _init():
     tpl.register_package(__name__, alias='contact_form')
 
     # HTTP API endpoints
-    http_api.register_handler('contact_form', __name__ + '.http_api')
+    http_api.handle('POST', 'contact_form/submit', _http_api.post_submit, 'contact_form@post_submit')
 
     # Permissions
     permissions.define_permission('contact_form.settings.manage', 'contact_form@manage_contact_form_settings', 'app')
