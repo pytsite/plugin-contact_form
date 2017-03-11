@@ -4,6 +4,10 @@
 ## Changelog
 
 
+### 0.2.10 (2017-03-11)
+Fixed HTTP API handler and incorrect language message ID.
+
+
 ### 0.2.9 (2017-03-11)
 Added **nocache** to the form's constructor.
 
