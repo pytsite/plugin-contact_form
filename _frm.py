@@ -1,4 +1,4 @@
-"""PytSite Contact Form.
+"""PytSite Contact Form Plugin
 """
 from pytsite import form as _form, widget as _widget, lang as _lang, assetman as _assetman, events as _events
 
@@ -18,6 +18,7 @@ class Form(_form.Form):
         self._css += ' pytsite-contact-form'
         self._prevent_submit = True
         self._area_footer_css += ' text-center'
+        self._nocache = True
 
         _assetman.add('contact_form@js/contact-form.js', async=True, defer=True)
 

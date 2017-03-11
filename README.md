@@ -4,6 +4,10 @@
 ## Changelog
 
 
+### 0.2.9 (2017-03-11)
+Added **nocache** to the form's constructor.
+
+
 ### 0.2.8 (2017-01-26)
 HTTP API update.
 
