@@ -10,11 +10,8 @@ __license__ = 'MIT'
 class Form(_form.Form):
     """Contact Form.
     """
-    def __init__(self, **kwargs):
-        """Init.
-        """
-        super().__init__(**kwargs)
 
+    def _on_setup_form(self, **kwargs):
         self._css += ' pytsite-contact-form'
         self._prevent_submit = True
         self._area_footer_css += ' text-center'

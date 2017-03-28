@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 0.2.11 (2017-03-28)
+- Fixed form initialization.
+- Added modal form auto-closing.
+
+
 ### 0.2.10 (2017-03-11)
 Fixed HTTP API handler and incorrect language message ID.
 
