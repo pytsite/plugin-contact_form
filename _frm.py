@@ -17,7 +17,7 @@ class Form(_form.Form):
         self._area_footer_css += ' text-center'
         self._nocache = True
 
-        _assetman.add('contact_form@js/contact-form.js', async=True, defer=True)
+        _assetman.preload('contact_form@js/contact-form.js', async=True, defer=True)
 
     def _on_setup_widgets(self):
         """Hook.

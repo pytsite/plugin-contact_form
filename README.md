@@ -4,6 +4,10 @@
 ## Changelog
 
 
+### 0.3 (2017-04-28)
+Support for latest PytSite asset management changes.
+
+
 ### 0.2.11 (2017-03-28)
 - Fixed form initialization.
 - Added modal form auto-closing.

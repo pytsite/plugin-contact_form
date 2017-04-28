@@ -13,9 +13,11 @@ def _init():
     from . import _settings_form, _http_api
 
     # Resources
-    assetman.register_package(__name__, alias='contact_form')
     lang.register_package(__name__, alias='contact_form')
     tpl.register_package(__name__, alias='contact_form')
+
+    assetman.register_package(__name__, alias='contact_form')
+    assetman.t_js(__name__ + '@js/**', 'js')
 
     # HTTP API endpoints
     http_api.handle('POST', 'contact_form/submit', _http_api.post_submit, 'contact_form@post_submit')
