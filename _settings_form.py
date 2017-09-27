@@ -1,4 +1,4 @@
-"""PytSite AddThis Settings Form.
+"""PytSite Contact Form Settings
 """
 from pytsite import widget as _widget, lang as _lang, settings as _settings, validation as _validation
 

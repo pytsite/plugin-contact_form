@@ -1,4 +1,4 @@
-"""PytSite Contact Form Plugin
+"""PytSite Contact Form Plugin Form
 """
 from pytsite import form as _form, widget as _widget, lang as _lang, assetman as _assetman, events as _events
 

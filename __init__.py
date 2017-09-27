@@ -1,4 +1,4 @@
-"""PytSite Contact Form Plugin.
+"""PytSite Contact Form Plugin
 """
 # Public API
 from ._api import get

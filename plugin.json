@@ -1,6 +1,6 @@
 {
-  "name": "plugins.contact_form",
-  "version": "0.3.2",
+  "name": "contact_form",
+  "version": "0.3.3",
   "description": {
     "en": "Contact form",
     "ru": "Форма обратной связи",
