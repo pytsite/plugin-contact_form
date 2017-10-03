@@ -7,7 +7,7 @@ message: "Повідомлення"
 send_message: "Надіслати"
 message_successfully_sent: 'Ваше повідомлення було успішно відправлено. Дякуємо.'
 error_occurred: 'Виникла помилка'
-message_from_site: 'Повідомлення від :name'
+message_from_site: 'Повідомлення від :contact_name неа сайті {:app_name}'
 recipient_emails: 'Email одержувачів'
 add_recipient: 'Додати одержувача'
 manage_contact_form_settings: "Керування налаштуваннями форми зворотнього зв'язку"
