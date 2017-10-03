@@ -4,6 +4,10 @@
 ## Changelog
 
 
+### 0.4 (2017-10-03)
+Added tpl global `contact_form`.
+
+
 ### 0.3.4 (2017-10-03)
 Fixed translations.
 

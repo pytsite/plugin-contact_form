@@ -12,10 +12,14 @@ def _init():
     from pytsite import assetman, lang, tpl, http_api, permissions, settings
     from . import _settings_form, _http_api_controllers
 
-    # Resources
+    # Language resources
     lang.register_package(__name__, alias='contact_form')
-    tpl.register_package(__name__, alias='contact_form')
 
+    # Tpl resources
+    tpl.register_package(__name__, alias='contact_form')
+    tpl.register_global('contact_form', get)
+
+    # Assetman resources
     assetman.register_package(__name__, alias='contact_form')
     assetman.t_js(__name__ + '@**')
 
