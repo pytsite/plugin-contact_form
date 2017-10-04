@@ -4,6 +4,10 @@
 ## Changelog
 
 
+### 1.0 (2017-10-04)
+Added events and new configuration parameter.
+
+
 ### 0.4 (2017-10-03)
 Added tpl global `contact_form`.
 
