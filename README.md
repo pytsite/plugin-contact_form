@@ -4,6 +4,10 @@
 ## Changelog
 
 
+### 1.0.1 (2017-10-24)
+Fixed JS code loading.
+
+
 ### 1.0 (2017-10-04)
 Added events and new configuration parameter.
 

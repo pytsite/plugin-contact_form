@@ -22,6 +22,7 @@ def _init():
     # Assetman resources
     assetman.register_package(__name__, alias='contact_form')
     assetman.t_js(__name__ + '@**')
+    assetman.preload('contact_form@js/contact-form.js', True, async=True, defer=True)
 
     # HTTP API endpoints
     http_api.handle('POST', 'contact_form/submit', _http_api_controllers.PostSubmit(), 'contact_form@post_submit')
