@@ -1,6 +1,7 @@
 """PytSite Contact Form Plugin Form
 """
-from pytsite import form as _form, widget as _widget, lang as _lang, assetman as _assetman, events as _events
+from pytsite import lang as _lang, events as _events
+from plugins import widget as _widget, form as _form
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'

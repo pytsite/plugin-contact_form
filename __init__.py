@@ -9,18 +9,19 @@ __license__ = 'MIT'
 
 
 def _init():
-    from pytsite import assetman, lang, tpl, http_api, permissions, settings
+    from pytsite import lang, tpl
+    from plugins import assetman, permissions, settings, http_api
     from . import _settings_form, _http_api_controllers
 
     # Language resources
-    lang.register_package(__name__, alias='contact_form')
+    lang.register_package(__name__)
 
     # Tpl resources
-    tpl.register_package(__name__, alias='contact_form')
+    tpl.register_package(__name__)
     tpl.register_global('contact_form', get)
 
     # Assetman resources
-    assetman.register_package(__name__, alias='contact_form')
+    assetman.register_package(__name__)
     assetman.t_js(__name__ + '@**')
     assetman.preload('contact_form@js/contact-form.js', True, async=True, defer=True)
 
