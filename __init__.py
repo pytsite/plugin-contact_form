@@ -26,7 +26,7 @@ def _init():
     assetman.preload('contact_form@js/contact-form.js', True, async=True, defer=True)
 
     # HTTP API endpoints
-    http_api.handle('POST', 'contact_form/submit', _http_api_controllers.PostSubmit(), 'contact_form@post_submit')
+    http_api.handle('POST', 'contact_form/submit', _http_api_controllers.PostSubmit, 'contact_form@post_submit')
 
     # Permissions
     permissions.define_permission('contact_form.settings.manage', 'contact_form@manage_contact_form_settings', 'app')

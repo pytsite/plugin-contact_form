@@ -2,7 +2,6 @@
 """
 from pytsite import lang as _lang, reg as _reg, mail as _mail, tpl as _tpl, router as _router, routing as _routing, \
     events as _events
-from plugins import settings as _settings
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
@@ -18,7 +17,7 @@ class PostSubmit(_routing.Controller):
             if field not in self.args:
                 raise ValueError("'{}' is not in input parameters".format(field))
 
-        recipients = _settings.get('contact_form.recipients', 'info@{}'.format(_router.server_name()))
+        recipients = _reg.get('contact_form.recipients', 'info@{}'.format(_router.server_name()))
         if isinstance(recipients, str):
             recipients = (recipients,)
 
