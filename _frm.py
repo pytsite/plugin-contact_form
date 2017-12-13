@@ -60,4 +60,4 @@ class Form(_form.Form):
         submit_btn.icon = None
         submit_btn.value = _lang.t('contact_form@send_message')
 
-        _events.fire('contact_form.setup_widgets', frm=self)
+        _events.fire('contact_form@setup_widgets', frm=self)

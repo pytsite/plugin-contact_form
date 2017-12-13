@@ -1,14 +1,17 @@
 """PytSite Contact Form Plugin
 """
-# Public API
-from ._api import get
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
+from pytsite import plugman as _plugman
 
-def _init():
+if _plugman.is_installed(__name__):
+    # Public API
+    from ._api import get
+
+
+def plugin_load():
     from pytsite import lang, tpl
     from plugins import assetman, permissions, settings, http_api
     from . import _settings_form, _http_api_controllers
@@ -22,7 +25,7 @@ def _init():
 
     # Assetman resources
     assetman.register_package(__name__)
-    assetman.t_js(__name__ + '@**')
+    assetman.t_js(__name__)
     assetman.preload('contact_form@js/contact-form.js', True, async=True, defer=True)
 
     # HTTP API endpoints
@@ -34,6 +37,3 @@ def _init():
     # Settings
     settings.define('contact_form', _settings_form.Form, 'contact_form@contact_form', 'fa fa-paper-plane',
                     'contact_form.settings.manage')
-
-
-_init()

@@ -14,7 +14,6 @@ class Form(_settings.Form):
             uid='setting_recipients',
             weight=10,
             label=_lang.t('contact_form@recipient_emails'),
-            required=True,
             rules=_validation.rule.Email(),
             add_btn_label=_lang.t('contact_form@add_recipient'),
         ))

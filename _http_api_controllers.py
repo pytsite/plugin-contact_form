@@ -21,7 +21,7 @@ class PostSubmit(_routing.Controller):
         if isinstance(recipients, str):
             recipients = (recipients,)
 
-        _events.fire('contact_form.submit', args=self.args)
+        _events.fire('contact_form@submit', args=self.args)
 
         for recipient in recipients:
             message = _mail.Message(
@@ -31,9 +31,9 @@ class PostSubmit(_routing.Controller):
                 reply_to=self.arg('contact_email'),
             )
 
-            _events.fire('contact_form.pre_message', args=self.args, message=message)
+            _events.fire('contact_form@pre_message', args=self.args, message=message)
             message.send()
-            _events.fire('contact_form.message', args=self.args, message=message)
+            _events.fire('contact_form@message', args=self.args, message=message)
 
         return {
             'message': _lang.t(_reg.get('contact_form.message_id_success', 'contact_form@message_successfully_sent'))
