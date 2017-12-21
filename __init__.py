@@ -11,16 +11,27 @@ if _plugman.is_installed(__name__):
     from ._api import get
 
 
-def plugin_load():
-    from pytsite import lang
+def _register_assetman_resources():
     from plugins import assetman
 
-    # Language resources
-    lang.register_package(__name__)
+    if not assetman.is_package_registered(__name__):
+        assetman.register_package(__name__)
+        assetman.t_js(__name__)
 
-    # Assetman resources
-    assetman.register_package(__name__)
-    assetman.t_js(__name__)
+    return assetman
+
+
+def plugin_install():
+    assetman = _register_assetman_resources()
+    assetman.build(__name__)
+    assetman.build_translations()
+
+
+def plugin_load():
+    from pytsite import lang
+
+    lang.register_package(__name__)
+    _register_assetman_resources()
 
 
 def plugin_load_uwsgi():
@@ -44,11 +55,3 @@ def plugin_load_uwsgi():
     # Settings
     settings.define('contact_form', _settings_form.Form, 'contact_form@contact_form', 'fa fa-paper-plane',
                     'contact_form@manage_settings')
-
-
-def plugin_install():
-    from plugins import assetman
-
-    plugin_load()
-    assetman.build(__name__)
-    assetman.build_translations()

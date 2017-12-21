@@ -3,6 +3,12 @@
 
 ## Changelog
 
+
+### 2.2.2 (2017-12-21)
+
+Init code refactored.
+
+
 ### 2.2.1 (2017-12-20)
 
 Installation hook added.
