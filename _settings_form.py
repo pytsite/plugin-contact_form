@@ -1,11 +1,11 @@
 """PytSite Contact Form Settings
 """
-from pytsite import lang as _lang, validation as _validation
-from plugins import widget as _widget, settings as _settings
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from pytsite import lang as _lang, validation as _validation
+from plugins import widget as _widget, settings as _settings
 
 
 class Form(_settings.Form):

@@ -1,11 +1,11 @@
 """PytSite Contact Form HTTP API Controllers
 """
-from pytsite import lang as _lang, reg as _reg, mail as _mail, tpl as _tpl, router as _router, routing as _routing, \
-    events as _events
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from pytsite import lang as _lang, reg as _reg, mail as _mail, tpl as _tpl, router as _router, routing as _routing, \
+    events as _events
 
 
 class PostSubmit(_routing.Controller):

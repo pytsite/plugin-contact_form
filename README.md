@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.3 (2017-12-21)
+
+Support for `settings-1.3`.
+
+
 ### 2.2.2 (2017-12-21)
 
 Init code refactored.
