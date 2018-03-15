@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.4 (2018-03-15)
+
+Support for `form-2.0`.
+
+
 ### 2.3 (2017-12-21)
 
 Support for `settings-1.3`.

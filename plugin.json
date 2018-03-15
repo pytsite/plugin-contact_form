@@ -1,6 +1,6 @@
 {
   "name": "contact_form",
-  "version": "2.3",
+  "version": "2.4",
   "description": {
     "en": "Contact form",
     "ru": "Форма обратной связи",
@@ -13,11 +13,10 @@
     "url": "https://shepetko.com"
   },
   "requires": {
-    "packages": [],
     "plugins": [
       "assetman",
       "font_awesome",
-      "form",
+      "form>=2.0",
       "http_api",
       "jquery",
       "settings>=1.3",

@@ -1,5 +1,5 @@
 require(['jquery', 'http-api', 'lang'], function ($, httpApi, lang) {
-    $('.form-cid-plugins-contact-form-frm-form').on('formSubmit', function (e, form) {
+    $('.pytsite-contact-form').on('formSubmit', function (e, form) {
         httpApi.post('contact_form/submit', form.serialize()).done(function (response) {
             alert(response.message);
             form.reset();

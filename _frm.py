@@ -9,14 +9,14 @@ from plugins import widget as _widget, form as _form
 
 
 class Form(_form.Form):
-    """Contact Form.
+    """Contact Form
     """
 
     def _on_setup_form(self, **kwargs):
-        self._css += ' pytsite-contact-form'
-        self._prevent_submit = True
-        self._area_footer_css += ' text-center'
-        self._nocache = True
+        self.nocache = True
+        self.css += ' pytsite-contact-form'
+        self.prevent_submit = True
+        self.area_footer_css += ' text-center'
 
     def _on_setup_widgets(self):
         """Hook.
