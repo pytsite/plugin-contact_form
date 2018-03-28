@@ -5,7 +5,8 @@ __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 # Public API
-from ._api import get
+from ._api import get, on_setup_form, on_setup_widgets
+from ._frm import Form
 
 
 def plugin_load():
@@ -32,7 +33,6 @@ def plugin_load_uwsgi():
 
     # Tpl resources
     tpl.register_package(__name__)
-    tpl.register_global('contact_form', get)
 
     # Assetman resources
     assetman.preload('contact_form@js/contact-form.js', True, async=True, defer=True)

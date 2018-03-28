@@ -18,6 +18,8 @@ class Form(_form.Form):
         self.prevent_submit = True
         self.area_footer_css += ' text-center'
 
+        _events.fire('contact_form@setup_form', frm=self)
+
     def _on_setup_widgets(self):
         """Hook.
         """

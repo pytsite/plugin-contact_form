@@ -4,6 +4,13 @@
 ## Changelog
 
 
+### 2.5 (2018-03-28)
+
+- New API shortcut functions: `on_setup_form()`, `on_setup_widgets()`.
+- `Form`'s class exposed to the public API.
+- Tpl's global removed in favour of usage `plugins` global
+
+
 ### 2.4 (2018-03-15)
 
 Support for `form-2.0`.
