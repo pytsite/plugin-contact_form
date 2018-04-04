@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.6.1 (2018-04-04)
+
+`plugin.json` fixed.
+
+
 ### 2.6 (2018-04-04)
 
 Support for `form-2.3`.
