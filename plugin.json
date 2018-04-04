@@ -17,7 +17,7 @@
     "plugins": [
       "assetman",
       "font_awesome",
-      "form>=2.0",
+      "form>=2.3",
       "http_api",
       "jquery",
       "settings>=1.3",

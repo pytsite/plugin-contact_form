@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.6 (2018-04-04)
+
+Support for `form-2.3`.
+
+
 ### 2.5 (2018-03-28)
 
 - New API shortcut functions: `on_setup_form()`, `on_setup_widgets()`.

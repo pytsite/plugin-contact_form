@@ -58,7 +58,7 @@ class Form(_form.Form):
             required=True,
         ))
 
-        submit_btn = self.get_widget('action-submit')
+        submit_btn = self.get_widget('action_submit')
         submit_btn.icon = None
         submit_btn.value = _lang.t('contact_form@send_message')
 
