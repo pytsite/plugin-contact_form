@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.6.2 (2018-04-11)
+
+Quick and dirty fix of form's initialization..
+
+
 ### 2.6.1 (2018-04-04)
 
 `plugin.json` fixed.

@@ -12,8 +12,12 @@ class Form(_form.Form):
     """Contact Form
     """
 
+    def __init__(self, **kwargs):
+        """Init
+        """
+        super().__init__(nocache=True, **kwargs)
+
     def _on_setup_form(self, **kwargs):
-        self.nocache = True
         self.css += ' pytsite-contact-form'
         self.prevent_submit = True
         self.area_footer_css += ' text-center'
