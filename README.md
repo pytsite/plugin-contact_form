@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.7 (2018-04-25)
+
+Support of `form-3.0`.
+
+
 ### 2.6.2 (2018-04-11)
 
 Quick and dirty fix of form's initialization..

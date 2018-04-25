@@ -11,13 +11,7 @@ from plugins import widget as _widget, form as _form
 class Form(_form.Form):
     """Contact Form
     """
-
-    def __init__(self, **kwargs):
-        """Init
-        """
-        super().__init__(nocache=True, **kwargs)
-
-    def _on_setup_form(self, **kwargs):
+    def _on_setup_form(self):
         self.css += ' pytsite-contact-form'
         self.prevent_submit = True
         self.area_footer_css += ' text-center'
