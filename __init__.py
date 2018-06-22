@@ -28,14 +28,11 @@ def plugin_install():
 
 def plugin_load_uwsgi():
     from pytsite import tpl
-    from plugins import assetman, settings, http_api
+    from plugins import settings, http_api
     from . import _settings_form, _http_api_controllers
 
     # Tpl resources
     tpl.register_package(__name__)
-
-    # Assetman resources
-    assetman.preload('contact_form@js/contact-form.js', True, async=True, defer=True)
 
     # HTTP API endpoints
     http_api.handle('POST', 'contact_form/submit', _http_api_controllers.PostSubmit, 'contact_form@post_submit')
