@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.9 (2018-07-19)
+
+Support of `form-4.6`.
+
+
 ### 2.8.1 (2018-05-22)
 
 Asset loading issue fixed.

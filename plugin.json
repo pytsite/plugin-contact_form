@@ -1,6 +1,6 @@
 {
   "name": "contact_form",
-  "version": "2.8.1",
+  "version": "2.9",
   "description": {
     "en": "Contact form",
     "ru": "Форма обратной связи",
@@ -17,7 +17,7 @@
     "plugins": [
       "assetman",
       "font_awesome",
-      "form>=4.0",
+      "form>=4.6",
       "http_api",
       "jquery",
       "settings>=1.3",
