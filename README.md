@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.9.1 (2018-07-19)
+
+Typo fixed.
+
+
 ### 2.9 (2018-07-19)
 
 Support of `form-4.6`.
