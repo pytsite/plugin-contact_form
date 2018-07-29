@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.10 (2018-07-29)
+
+Support of `widget-2.4` and `form-4.7`.
+
+
 ### 2.9.1 (2018-07-19)
 
 Typo fixed.

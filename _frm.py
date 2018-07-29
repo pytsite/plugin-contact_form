@@ -23,15 +23,13 @@ class Form(_form.Form):
     def _on_setup_widgets(self):
         """Hook.
         """
-        name_email_container = _widget.Container(
+        name_email_container = _widget.container.Container(
             uid='name_email',
-            weight=10,
             css='row',
-            child_sep=None,
+            children_sep=None,
         )
 
         name_email_container.append_child(_widget.input.Text(
-            weight=10,
             uid='contact_name',
             placeholder=_lang.t('contact_form@your_name'),
             label_hidden=True,
@@ -40,7 +38,6 @@ class Form(_form.Form):
         ))
 
         name_email_container.append_child(_widget.input.Email(
-            weight=20,
             uid='contact_email',
             placeholder=_lang.t('contact_form@your_email'),
             label_hidden=True,
@@ -51,7 +48,6 @@ class Form(_form.Form):
         self.add_widget(name_email_container)
 
         self.add_widget(_widget.input.TextArea(
-            weight=20,
             uid='contact_message',
             placeholder=_lang.t('contact_form@message'),
             label_hidden=True,
