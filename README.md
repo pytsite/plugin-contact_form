@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 3.0 (2018-10-08)
+
+Support of `pytsite-8.x`.
+
+
 ### 2.10 (2018-07-29)
 
 Support of `widget-2.4` and `form-4.7`.
