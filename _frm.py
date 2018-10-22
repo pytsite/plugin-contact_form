@@ -11,12 +11,11 @@ from plugins import widget as _widget, form as _form
 class Form(_form.Form):
     """Contact Form
     """
+
     def _on_setup_form(self):
         self.css += ' pytsite-contact-form'
-        # self.prevent_submit = True
+        self.prevent_submit = True
         self.area_footer_css += ' text-center'
-
-        # self.assets.append('contact_form@js/contact-form.js')
 
         _events.fire('contact_form@setup_form', frm=self)
 

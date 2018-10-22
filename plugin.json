@@ -1,6 +1,6 @@
 {
   "name": "contact_form",
-  "version": "3.0",
+  "version": "3.1",
   "description": {
     "en": "Contact form",
     "ru": "Форма обратной связи",
@@ -18,7 +18,7 @@
       "form": "5.x",
       "http_api": "3.x",
       "settings": "2.x",
-      "widget": "3.x"
+      "widget": "4.x"
     }
   }
 }
