@@ -1,6 +1,6 @@
 {
   "name": "contact_form",
-  "version": "3.1",
+  "version": "3.2",
   "description": {
     "en": "Contact form",
     "ru": "Форма обратной связи",
@@ -13,7 +13,7 @@
     "url": "https://shepetko.com"
   },
   "requires": {
-    "pytsite": "8.x",
+    "pytsite": ">=9.0",
     "plugins": {
       "form": "5.x",
       "http_api": "3.x",

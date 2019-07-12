@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 3.2 (2018-07-12)
+
+Support of `pytsite-9.0`.
+
+
 ### 3.1 (2018-10-22)
 
 Support of `widget-4.x`.
